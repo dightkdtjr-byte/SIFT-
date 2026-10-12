@@ -1,7 +1,7 @@
 import sys, re, zipfile
 src, dst, v161 = sys.argv[1:4]
 F = "HY신명조"
-NEW = f'w:ascii="{F}" w:eastAsia="{F}" w:hAnsi="{F}" w:cs="{F}"'
+NEW = f'w:ascii="Times New Roman" w:eastAsia="{F}" w:hAnsi="Times New Roman" w:cs="Times New Roman"'
 SKIP = ("Consolas", "Cambria Math", "Symbol", "Wingdings")
 ATTR = re.compile(r'\s+w:(ascii|eastAsia|hAnsi|cs)(Theme)?="[^"]*"')
 stats = {}
